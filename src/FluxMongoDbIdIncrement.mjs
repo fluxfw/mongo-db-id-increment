@@ -2,7 +2,7 @@ import { ReturnDocument } from "mongodb";
 
 /** @typedef {import("mongodb").Collection} Collection */
 
-export class NextCommand {
+export class FluxMongoDbIdIncrement {
     /**
      * @type {Collection}
      */
@@ -10,7 +10,7 @@ export class NextCommand {
 
     /**
      * @param {Collection} collection
-     * @returns {NextCommand}
+     * @returns {FluxMongoDbIdIncrement}
      */
     static new(collection) {
         return new this(
@@ -24,6 +24,16 @@ export class NextCommand {
      */
     constructor(collection) {
         this.#collection = collection;
+    }
+
+    /**
+     * @param {string} service
+     * @returns {Promise<void>}
+     */
+    async clear(service) {
+        await this.#collection.deleteMany({
+            service
+        });
     }
 
     /**

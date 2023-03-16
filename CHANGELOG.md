@@ -6,6 +6,13 @@ Changes:
 
 \-
 
+## v2023-03-16-1
+
+Changes:
+
+- Simplify
+- Renamed to `flux-mongo-db-id-increment`
+
 ## v2023-02-09-1
 
 Changes:
