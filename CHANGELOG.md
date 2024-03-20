@@ -6,6 +6,12 @@ Changes:
 
 \-
 
+## v2024-03-20-1
+
+Changes:
+
+- Make static new async
+
 ## v2023-03-16-1
 
 Changes:

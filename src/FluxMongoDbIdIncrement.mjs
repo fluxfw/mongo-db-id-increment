@@ -10,9 +10,9 @@ export class FluxMongoDbIdIncrement {
 
     /**
      * @param {Collection} collection
-     * @returns {FluxMongoDbIdIncrement}
+     * @returns {Promise<FluxMongoDbIdIncrement>}
      */
-    static new(collection) {
+    static async new(collection) {
         return new this(
             collection
         );
