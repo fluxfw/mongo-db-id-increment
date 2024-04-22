@@ -6,6 +6,12 @@ Changes:
 
 \-
 
+## v2024-04-22-1
+
+Changes:
+
+- Fix CommonJs import
+
 ## v2024-03-20-1
 
 Changes:

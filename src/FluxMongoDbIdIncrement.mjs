@@ -1,4 +1,4 @@
-import { ReturnDocument } from "mongodb";
+import mongodb from "mongodb";
 
 /** @typedef {import("mongodb").Collection} Collection */
 
@@ -48,7 +48,7 @@ export class FluxMongoDbIdIncrement {
                 last_id: 1
             }
         }, {
-            returnDocument: ReturnDocument.AFTER,
+            returnDocument: mongodb.ReturnDocument.AFTER,
             upsert: true
         })).value.last_id;
     }
