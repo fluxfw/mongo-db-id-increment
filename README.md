@@ -1,3 +1,1 @@
-# flux-mongo-db-id-increment
-
-MongoDb id increment collection
+# mongo-db-id-increment

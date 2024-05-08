@@ -2,7 +2,7 @@ import { ReturnDocument } from "mongodb";
 
 /** @typedef {import("mongodb").Collection} Collection */
 
-export class FluxMongoDbIdIncrement {
+export class MongoDbIdIncrement {
     /**
      * @type {Collection}
      */
@@ -10,7 +10,7 @@ export class FluxMongoDbIdIncrement {
 
     /**
      * @param {Collection} collection
-     * @returns {Promise<FluxMongoDbIdIncrement>}
+     * @returns {Promise<MongoDbIdIncrement>}
      */
     static async new(collection) {
         return new this(
